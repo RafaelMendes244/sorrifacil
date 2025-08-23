@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sorrisinho Odontologia Infantil – Cuidando do Sorriso das Crianças</title>
+    <meta name="description" content="Consultório especializado em odontologia infantil. Ambiente acolhedor, profissionais especializados e cuidado especial com o sorriso das crianças.">
+
+    <meta property="og:title" content="Sorrisinho Odontologia Infantil">
+    <meta property="og:description" content="Cuidado especializado em um ambiente acolhedor e divertido para crianças.">
+    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO.jpg">
+    <meta property="og:url" content="URL_DO_SEU_SITE.com.br">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Principal">
+            <a class="nav__brand" href="#home">
+                <i class="fas fa-tooth" aria-hidden="true"></i>
+                <span>Sorrisinho</span>
+            </a>
+
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a role="menuitem" class="link" href="#home">Início</a></li>
+                <li role="none"><a role="menuitem" class="link" href="#professional">Profissional</a></li>
+                <li role="none"><a role="menuitem" class="link" href="#clinic">Consultório</a></li>
+                <li role="none"><a role="menuitem" class="link" href="#services">Serviços</a></li>
+                <li role="none"><a role="menuitem" class="link" href="#contact">Contato</a></li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary nav__cta--desktop" aria-label="Agendar consulta">Agendar</a>
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-controls="offcanvas" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div class="offcanvas-backdrop" id="backdrop" hidden></div>
+    <aside class="offcanvas" id="offcanvas" aria-hidden="true" aria-labelledby="navToggle">
+        <div class="offcanvas__header">
+            <div class="nav__brand"><i class="fas fa-tooth" aria-hidden="true"></i><span>Sorrisinho</span></div>
+            <button class="nav__toggle" id="navClose" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas__body">
+            <nav class="offcanvas__nav" aria-label="Menu mobile">
+                <a href="#home" data-navlink>Início</a>
+                <a href="#professional" data-navlink>Profissional</a>
+                <a href="#clinic" data-navlink>Consultório</a>
+                <a href="#services" data-navlink>Serviços</a>
+                <a href="#contact" data-navlink>Contato</a>
+            </nav>
+        </div>
+        <div class="offcanvas__footer">
+            <a class="btn btn-primary btn-full nav__cta" href="#contact"><i class="fa-regular fa-calendar"></i> Agendar Consulta</a>
+        </div>
+    </aside>
+
+    <main id="home" class="main">
+        <section class="hero section">
+            <div class="container grid hero__grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">Cuidando do <span class="text-gradient">sorriso</span> das crianças</h1>
+                    <p class="hero__text">Odontologia infantil em um ambiente acolhedor e divertido. Cada visita vira uma experiência positiva para o seu filho.</p>
+                    <div class="hero__actions" style="display:flex; gap:.75rem; flex-wrap:wrap;">
+                        <a href="#contact" class="btn btn-primary"><i class="fa-regular fa-calendar"></i> Agendar Consulta</a>
+                        <a href="#professional" class="btn btn-outline"><i class="fa-solid fa-circle-info"></i> Saiba Mais</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <h3 data-counter="500">500+</h3>
+                            <p>Crianças atendidas</p>
+                        </div>
+                        <div class="stat">
+                            <h3 data-counter="10">10+</h3>
+                            <p>Anos de experiência</p>
+                        </div>
+                        <div class="stat">
+                            <h3 data-counter="98">98%</h3>
+                            <p>Satisfação dos pais</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__art">
+                    <img src="https://img.freepik.com/fotos-gratis/crianca-afro-feliz-em-exame-regular-de-dentes-na-clinica-dentaria_651396-1411.jpg" alt="Criança sorrindo no dentista">
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="professional section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Nossa Profissional</h2>
+                    <p class="subtitle">Especialista dedicada ao cuidado infantil</p>
+                </div>
+                <div class="grid professional__grid">
+                    <div class="professional__photo">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80 alt="Dra. Ana Maria Silva">
+                    </div>
+                    <div class="professional__content">
+                        <h3>Dra. Ana Maria Silva</h3>
+                        <p class="subtitle">Odontopediatra | CRO 12345</p>
+                        <p>Com mais de 10 anos de experiência em odontologia infantil, a Dra. Ana é especialista em criar um ambiente acolhedor onde as crianças se sentem seguras e confortáveis. Sua abordagem lúdica e carinhosa transforma cada consulta em uma experiência positiva.</p>
+                        
+                        <ul class="credentials">
+                            <li><i class="fas fa-graduation-cap"></i> Graduação em Odontologia - USP</li>
+                            <li><i class="fas fa-certificate"></i> Especialização em Odontopediatria - UNICAMP</li>
+                            <li><i class="fas fa-medal"></i> Mestrado em Saúde Bucal Infantil</li>
+                            <li><i class="fas fa-users"></i> Membro da Associação Brasileira de Odontopediatria</li>
+                            <li><i class="fas fa-heart"></i> +500 crianças atendidas com sucesso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clinic" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Nosso Consultório</h2>
+                    <p class="subtitle">Um ambiente pensado especialmente para as crianças</p>
+                </div>
+                
+                <div class="clinic__gallery">
+                    <div class="gallery__item">
+                        <img src="https://www.vitaeodontologia.com.br/img/1654612843.9793-sessao1_foto-N.jpg" alt="Sala de espera infantil">
+                        <div class="gallery__overlay">
+                            <span>Sala de Espera Lúdica</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Consultório odontológico">
+                        <div class="gallery__overlay">
+                            <span>Consultório Moderno</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Área de brinquedos">
+                        <div class="gallery__overlay">
+                            <span>Área de Brincadeiras</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Equipamentos modernos">
+                        <div class="gallery__overlay">
+                            <span>Equipamentos de Última Geração</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Sobre Nós</h2>
+                    <p class="subtitle">Especialistas em odontologia infantil</p>
+                </div>
+                <div class="grid about__grid">
+                    <div>
+                        <h3 class="about__title">Nossa missão</h3>
+                        <p class="about__text">Proporcionar cuidados odontológicos de excelência para crianças em um ambiente acolhedor e divertido, promovendo a saúde bucal desde a primeira infância.</p>
+                        <ul class="features">
+                            <li class="feature"><i class="fa-solid fa-check-circle"></i><span>Profissionais especializados em odontopediatria</span></li>
+                            <li class="feature"><i class="fa-solid fa-check-circle"></i><span>Ambiente lúdico e acolhedor</span></li>
+                            <li class="feature"><i class="fa-solid fa-check-circle"></i><span>Técnicas modernas e menos invasivas</span></li>
+                            <li class="feature"><i class="fa-solid fa-check-circle"></i><span>Educação preventiva para pais e filhos</span></li>
+                        </ul>
+                    </div>
+                    <div class="about__art">
+                        <div class="tilt"><i class="fa-solid fa-user-md"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Nossos Serviços</h2>
+                    <p class="subtitle">Cuidado completo para a saúde bucal infantil</p>
+                </div>
+                <div class="grid services__grid">
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="service__title">Prevenção e Limpeza</h3>
+                        <p class="service__text">Limpeza profissional e orientações para manter a saúde bucal em dia.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-solid fa-tooth"></i></div>
+                        <h3 class="service__title">Tratamento de Cáries</h3>
+                        <p class="service__text">Tratamento cuidadoso e confortável para restaurar a saúde dos dentinhos.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-regular fa-face-smile"></i></div>
+                        <h3 class="service__title">Ortodontia Infantil</h3>
+                        <p class="service__text">Correção precoce de problemas ortodônticos para um sorriso perfeito.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-solid fa-flask"></i></div>
+                        <h3 class="service__title">Aplicação de Flúor</h3>
+                        <p class="service__text">Fortalecimento do esmalte para prevenir cáries.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="service__title">Educação Bucal</h3>
+                        <p class="service__text">Ensino lúdico sobre higiene bucal para crianças e orientação aos pais.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service__icon"><i class="fa-solid fa-kit-medical"></i></div>
+                        <h3 class="service__title">Emergências</h3>
+                        <p class="service__text">Atendimento de urgência para traumas e dores dentárias.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Depoimentos</h2>
+                    <p class="subtitle">O que os pais dizem sobre nosso trabalho</p>
+                </div>
+                <div class="testimonials__grid">
+                    <div class="testimonial">
+                        <p class="testimonial__text">A Dra. Ana é incrível! Minha filha tinha muito medo de dentista, mas depois da primeira consulta aqui, ela sempre pergunta quando vai voltar. O ambiente é super acolhedor e a doutora tem uma paciência infinita com as crianças.</p>
+                        <div class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612e575?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Márcia Santos" class="testimonial__avatar">
+                            <div class="testimonial__info">
+                                <h4>Márcia Santos</h4>
+                                <p>Mãe da Sofia, 6 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial__text">Excelente profissional! O consultório é lindamente decorado e pensado para as crianças. Meu filho fez o primeiro tratamento de cárie aqui e nem chorou. Recomendo de olhos fechados!</p>
+                        <div class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Carlos Silva" class="testimonial__avatar">
+                            <div class="testimonial__info">
+                                <h4>Carlos Silva</h4>
+                                <p>Pai do Miguel, 8 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial__text">Desde bebê trouxemos nossos filhos aqui. A Dra. Ana acompanhou todo o crescimento deles e sempre nos orientou da melhor forma. É mais que uma dentista, é uma amiga da família!</p>
+                        <div class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Ana Paula Lima" class="testimonial__avatar">
+                            <div class="testimonial__info">
+                                <h4>Ana Paula Lima</h4>
+                                <p>Mãe do João e da Clara</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title">Contato e Localização</h2>
+                    <p class="subtitle">Venha nos visitar ou entre em contato</p>
+                </div>
+
+                <div class="grid contact__grid">
+                    <div>
+                        <h3 class="about__title">Informações de contato</h3>
+                        <div class="info__block">
+                            <div class="info__row"><i class="fa-solid fa-location-dot"></i>
+                                <div><strong>Endereço</strong><br>Rua das Flores, 123 – Centro – São Paulo/SP – CEP 01234-567</div>
+                            </div>
+                            <div class="info__row"><i class="fa-solid fa-phone"></i>
+                                <div><strong>Telefone</strong><br><a href="tel:+5511999999999">(11) 99999‑9999</a> · <a href="tel:+551133333333">(11) 3333‑3333</a></div>
+                            </div>
+                            <div class="info__row"><i class="fa-solid fa-envelope"></i>
+                                <div><strong>E-mail</strong><br><a href="mailto:contato@sorrisinho.com.br">contato@sorrisinho.com.br</a></div>
+                            </div>
+                        </div>
+
+                        <h3 class="about__title">Horário de funcionamento</h3>
+                        <div class="schedule">
+                            <div class="schedule__row"><span>Segunda a Sexta</span><span>08:00 – 18:00</span></div>
+                            <div class="schedule__row"><span>Sábado</span><span>08:00 – 12:00</span></div>
+                            <div class="schedule__row"><span>Domingo</span><span>Fechado</span></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="about__title">Envie uma mensagem</h3>
+                        <form id="contactForm" class="form" novalidate>
+                            <div>
+                                <label for="responsavel" class="sr-only">Nome dos pais</label>
+                                <input id="responsavel" class="form__control" type="text" name="responsavel" placeholder="Nome dos pais" required>
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">E-mail</label>
+                                <input id="email" class="form__control" type="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="sr-only">Telefone</label>
+                                <input id="telefone" class="form__control" type="tel" name="telefone" placeholder="Telefone" inputmode="tel" required>
+                            </div>
+                            <div>
+                                <label for="crianca" class="sr-only">Nome da criança</label>
+                                <input id="crianca" class="form__control" type="text" name="crianca" placeholder="Nome da criança">
+                            </div>
+                            <div>
+                                <label for="idade" class="sr-only">Idade da criança</label>
+                                <input id="idade" class="form__control" type="number" name="idade" placeholder="Idade da criança" min="0" max="18">
+                            </div>
+                            <div>
+                                <label for="mensagem" class="sr-only">Mensagem</label>
+                                <textarea id="mensagem" class="form__control" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-full" type="submit"><i class="fa-regular fa-paper-plane"></i> Enviar mensagem</button>
+                            <div id="form-feedback" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map section" aria-label="Mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197545238624!2d-46.656571184476!3d-23.56133996748458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622731845935!5m2!1spt-BR!2sbr"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container grid footer__grid">
+            <div>
+                <a class="footer__brand" href="#home"><i class="fas fa-tooth"></i><span>Sorrisinho</span></a>
+                <p class="footer__text">Cuidando do sorriso das crianças com carinho, profissionalismo e dedicação.</p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#professional">Profissional</a></li>
+                    <li><a href="#clinic">Consultório</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li>Rua das Flores, 123</li>
+                    <li>Centro – São Paulo/SP</li>
+                    <li>(11) 99999‑9999</li>
+                    <li>contato@sorrisinho.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">© <span id="year">2024</span> <a href="https://rmsites.vercel.app" target="_blank">WebSites RM</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#home" class="scrollup" id="scrollUp" aria-label="Voltar ao topo"><i class="fa-solid fa-angle-up"></i></a>
+    <a class="fab-wa" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
