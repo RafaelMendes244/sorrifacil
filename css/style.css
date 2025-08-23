@@ -369,3 +369,22 @@
       .hero__art { order: -1; margin-bottom: 1.5rem; }
       .hero__stats { grid-template-columns: 1fr; }
     }
+
+    /* ======================== MEDIA QUERIES (AJUSTE FINO) ======================== */
+
+/* Adicione este novo bloco no final do arquivo */
+@media (max-width: 400px) {
+  .hero__art img {
+    /* Em telas muito pequenas, abandonamos o clamp 
+      e usamos um tamanho relativo à largura da tela (vw)
+      para garantir que a imagem sempre encolha o suficiente.
+    */
+    width: 75vw; 
+    height: 75vw; /* Mantém o círculo perfeito */
+  }
+
+  .hero__title {
+    /* Opcional: Diminui um pouco o título principal apenas nas telas menores */
+    font-size: 1.8rem;
+  }
+}
