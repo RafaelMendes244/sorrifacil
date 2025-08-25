@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Helper: Throttling function for performance optimization
     function throttle(func, limit) {
         let inThrottle;
-        return function() {
+        return function () {
             const args = arguments;
             const context = this;
             if (!inThrottle) {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenuLinks = document.querySelectorAll('.nav__menu a');
     const counterElements = document.querySelectorAll('[data-counter]');
     const yearSpan = document.getElementById('year');
-    
+
     // --- Offcanvas (Mobile Menu) ---
     function openOffcanvas() {
         backdrop.hidden = false;
@@ -82,20 +82,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
+
     // Attach the throttled scroll handler
     window.addEventListener('scroll', throttle(handleScrollEffects, 100));
 
 
     // --- Form Validation and Submission ---
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             const feedbackEl = document.getElementById('form-feedback');
             let isValid = true;
-            
+
             // Clear previous feedback
             feedbackEl.textContent = '';
             feedbackEl.className = '';
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     input.classList.add('is-valid');
                 }
             });
-            
+
             // Email regex validation
             const emailInput = this.querySelector('[name="email"]');
             if (emailInput && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
@@ -120,15 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.classList.remove('is-valid');
                 isValid = false;
             }
-            
+
             if (isValid) {
                 // Professional feedback instead of alert()
                 feedbackEl.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
                 feedbackEl.classList.add('success');
-                
+
                 this.reset();
                 this.querySelectorAll('.form__control').forEach(input => input.classList.remove('is-valid', 'is-invalid'));
-                
+
                 // Clear the message after 5 seconds
                 setTimeout(() => {
                     feedbackEl.textContent = '';
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         requestAnimationFrame(updateCounter);
     }
-    
+
     const counterObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.5 });
-    
+
     counterElements.forEach(el => counterObserver.observe(el));
-    
+
     // --- Footer Year ---
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
